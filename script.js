@@ -27,10 +27,15 @@ function displayData(products) {
             <img class="thumbnail" src="${product.thumbnail}" alt="${product.title}" />
             <p class="detail">${product.description}</p>
             <div class="price">
-            <p>Price: $${product.price}</p>
+            <p>Price: ₹ ${Math.ceil(product.price) * 95}</p>
             <button class="button" onclick="addToCart(${product.id})">Add to Cart</button>
             </div>
         </div>
         `;
     });
+}
+function addToCart(id) {
+    localStorage.setItem("productId", id);
+    window.location.href = "details.html";
+
 }
