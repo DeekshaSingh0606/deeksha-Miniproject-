@@ -27,7 +27,7 @@ function displayData(products) {
             <img class="thumbnail" src="${product.thumbnail}" alt="${product.title}" />
             <p class="detail">${product.description}</p>
             <div class="price">
-            <p>Price: ₹ ${Math.ceil(product.price) * 95}</p>
+            <p>Price: ₹ ${Math.ceil(product.price) * 95}/-</p>
             <button class="button" onclick="addToCart(${product.id})">Add to Cart</button>
             </div>
         </div>

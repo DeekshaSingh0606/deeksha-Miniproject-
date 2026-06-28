@@ -1,6 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
+
 }
 
 .container {
@@ -8,17 +9,13 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-
-
-
-
 }
 
 .nav {
     width: 100%;
     height: 50px;
     padding: 15px;
-    background-color: #777575;
+    background-color: #c6c3c3;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,20 +71,90 @@ img {
     min-height: 120px;
 }
 
-#cart {
+#cart2 {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+
 }
 
 .details-card {
-    width: 500px;
-    padding: 20px;
-    border: 1px solid gray;
+    /*image k liye use ho raha hai*/
+    width: 300px;
+    padding: 10px;
+    border: 2px solid rgb(83, 75, 75);
     border-radius: 10px;
     text-align: center;
+    background-color: rgb(204, 199, 199);
 }
 
-.details-card img {
-    width: 250px;
+.details-card1 {
+    /*details k liye use ho raha hai*/
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    color: rgb(42, 42, 42);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+
+}
+
+.cart-btn {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+
+
+}
+
+.buy-btn {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.top {
+    margin: 30px;
+    padding: 20px;
+
+}
+
+.bottom {
+    padding: 20px;
+    margin: 30px;
+}
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 300px;
+    }
 }
